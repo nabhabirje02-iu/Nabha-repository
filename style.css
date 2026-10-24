@@ -1,78 +1,110 @@
-
 body {
-    background-color: #ffe5ec; /* Light pastel pink background */
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    background-color: rgb(243, 127, 214);
+}
+.topic img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Calculator main frame outline border */
-.calculator {
-    background-color: #ffffff;
-    width: 300px;
-    padding: 20px;
-    border: 3px solid #ff4d6d; /* Red border outline */
-    border-radius: 20px; /* Slightly curved rounded box */
+
+h1{
+  
+    text-align: center;
+    font-size: 30px;
+    color: rgb(122, 26, 98);
+    margin: 25px auto;
+    max-width: 1100px;
+
+}
+
+h4{
+    text-align: center;
+    text-shadow: rgb(160, 17, 124);
+    color: rgb(200, 35, 159);
+}
+h2{
+    text-align: center;
+    color: rgb(169, 35, 135);
+}
+
+.moods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.moods label:nth-child(odd) {
+    grid-column: 1;
+}
+
+.moods label:nth-child(even) {
+    grid-column: 2;
+}
+.box:hover {
+    transform: translateY(1vh);
+}
+.mood{
+    background-color: rgb(209, 11, 133);
+    border: 2px solid rgb(158, 5, 120);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 30px;
     text-align: center;
 }
 
-.title {
-    color: #cc0022; /* Pure rose red text */
-    margin-top: 0;
+.mood h2 {
+    color: rgb(184, 2, 138);
+    margin-bottom: 25px;
 }
 
-/* Calculation input field display bar box */
-#display {
-    width: 90%;
-    height: 50px;
-    font-size: 24px;
-    text-align: right;
-    padding: 5px;
-    margin-bottom: 20px;
-    background-color: #fff0f3;
-    border: 2px solid #ffccd5;
+.mood label {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px;
+    background-color: rgb(175, 4, 132);
     border-radius: 10px;
-    color: #cc0022;
+}
+/*movie image*/
+#movie-result {
+    text-align: center;
 }
 
-/* Align buttons evenly in 4 side-by-side columns */
-.button-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+#movie-result img {
+    display: block;
+    margin: 0 auto;
 }
 
-/* Default styling for standard number button keys */
-.btn {
-    background-color: #ffe5ec; /* Soft base pink button */
-    color: #cc0022; /* Basic red text color */
+#movie-result button {
+    display: block;
+    margin: 15px auto;
+}
+
+/* Button container */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Mid-blue buttons */
+.blue-btn {
+    background-color: rgb(227, 52, 137);
+    color: rgb(218, 25, 121);
     border: none;
-    padding: 15px;
-    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 10px;
+    transition: 0.3s;
 }
 
-/* Math operation arithmetic calculation signs design layout */
-.btn.operator-btn {
-    background-color: #cc0022; /* Solid dark red keys */
-    color: #ffffff; /* Plain white signs */
+/* Hover effect */
+.blue-btn:hover {
+    background-color: rgb(237, 5, 117);
+    transform: scale(1.05);
 }
-
-/* Clear reset key utility style properties */
-.btn.clear-btn {
-    background-color: #ff85a1;
-    color: #ffffff;
-}
-
-/* Evaluation equal to function action execution key */
-.btn.equal-btn {
-    background-color: #ff4d6d;
-    color: #ffffff;
-    grid-row: span 2; /* Extends vertically through blank row grid blocks */
-    height: 100%;
+#dramasection,
+#movies-display {
+    display: none;
 }

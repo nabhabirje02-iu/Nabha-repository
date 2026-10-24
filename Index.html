@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topic"> 
+    <img src="Ctrl Logo.png"  alt="Logo"
+    height="200px" width="200px">
+    <h4>Give Your Mood The Main Character Energy It Deservers</h4>
+    <h1 style="text-align: center;">Your Personal Movie Recommender Because "Kuch Bhi Chalega" Is Not Yet Released!</h1>
+    <h4>Zero Clue? I Have Got your Queue</h4>
+    <i><h2>Life is a movie. Let us find the scene that feels like you.</h2></i>
+    </div>
+    <hr type="dot-line-dot">
+     <section id="moodsection">
+        <h1 style="text-align: center;"><header>LETS OBSERVE YOUR MOOD</header></h1>
+        
+        <div>
+            <label class="rom-com">
+         <input type="radio" name="mood" value="rom-com">
+         <span>ROM-COM VIBES</span>
+       </label>
+        <label class="sad">
+         <input type="radio" name="mood" value="sad">
+         <span>SAD VIBES</span>
+       </label>
+       <label class="criminal">
+                <input type="radio" name="genre" value="criminal">
+                <span>CRIMINAL DOCUMENTARIES</span>
+            </label>
+         
+       <label class="horror">
+                <input type="radio" name="genre" value="horror">
+                <span>HORROR & THRILLER</span>
+            </label>
+            <label class="fantasy">
+                <input type="radio" name="genre" value="fantasy">
+                <span>FANTASY</span>
+            </label>
+             
+        </div>
+        <div class="button-container">
+            <button type="button" class="blue-btn"
+            id="nextBtn">
+            Next
+        </button>
+        </div>
+    </section>
+    <hr >
+    <section id="dramasection" style="display: none;">
+        <h1 style="text-align: center;"><b><header>LET'S DECIDE OUR GENRE:</header></b></h1>
+        <div>
+            <label class="bollywood">
+                <input type="radio" name="genre" value="bollywood">
+                <span>BOLLYWOOD</span>
+            </label>
+            <label class="hollywood">
+                <input type="radio" name="genre" value="hollywood">
+                <span>HOLLYWOOD</span>
+            </label>
+            <label class="kdrama">
+                <input type="radio" name="genre" value="kdrama">
+                <span>K-DRAMA</span>
+            </label>
+            <label class="bldrama">
+                <input type="radio" name="genre" value="bldrama">
+                <span>BLDRAMA</span>
+            </label>
+
+           
+    <div class="button">
+        <button type="button" class="blue-btn"
+        id="submitBtn">
+         Submit
+    </button>
+    </div>
+    </div>
+    </section>
+    <hr>
+    
+<section id="movies-display" >
+    <h1 style="text-align: center;"> RECOMMENDED MOVIE</h1>
+    <div id="movie-result">
+        <h4>YOUR MOODS REQUIRE THESE MOVIES</h4>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
